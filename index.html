@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mahindra Blossom</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-gray-800">
+
+<!-- HEADER -->
+<header class="fixed top-0 w-full bg-white shadow z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-3">
+    <h1 class="text-lg font-bold text-red-600">Mahindra Lifespaces</h1>
+
+    <button onclick="toggleMenu()" class="md:hidden text-xl">☰</button>
+
+    <nav id="menu" class="hidden md:flex gap-6 text-sm font-medium">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="amenities.html">Amenities</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white border-t px-4 py-3">
+    <a class="block py-2" href="index.html">Home</a>
+    <a class="block py-2" href="about.html">About</a>
+    <a class="block py-2" href="pricing.html">Pricing</a>
+    <a class="block py-2" href="amenities.html">Amenities</a>
+    <a class="block py-2" href="contact.html">Contact</a>
+  </div>
+</header>
+
+<div class="h-16"></div>
+
+<!-- HERO -->
+<section class="relative min-h-[90vh] flex items-center">
+  <img
+    src="assets/images/hero.jpg"
+    class="absolute inset-0 w-full h-full object-cover"
+    alt="Mahindra Blossom"
+  >
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 text-white">
+    <h2 class="text-4xl md:text-5xl font-bold">
+      Mahindra <span class="text-red-400">Blossom</span>
+    </h2>
+    <p class="mt-4 max-w-xl">
+      Premium residences designed for positive, sustainable living.
+    </p>
+
+    <div class="mt-6 bg-white text-black inline-block px-6 py-3 rounded font-semibold">
+      ₹1.88 Cr Onwards
+    </div>
+
+    <button
+      onclick="openEnquiry()"
+      class="block mt-6 bg-red-500 px-6 py-3 rounded-full"
+    >
+      Enquire Now
+    </button>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="py-16">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+
+    <img
+      src="assets/images/living.jpg"
+      class="rounded-lg w-full h-[300px] object-cover"
+      alt="Living Room"
+    >
+
+    <div>
+      <h3 class="text-3xl font-bold mb-4">
+        Designed for Better Living
+      </h3>
+      <p class="text-gray-600 leading-relaxed">
+        Mahindra Blossom blends modern architecture with nature,
+        offering open spaces, wellness amenities and excellent connectivity.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- AMENITIES -->
+<section class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-10">Amenities</h3>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+      <div class="bg-white rounded shadow overflow-hidden">
+        <img src="assets/images/pool.jpg" class="h-48 w-full object-cover">
+        <p class="p-4 font-semibold">Swimming Pool</p>
+      </div>
+
+      <div class="bg-white rounded shadow overflow-hidden">
+        <img src="assets/images/garden.jpg" class="h-48 w-full object-cover">
+        <p class="p-4 font-semibold">Green Gardens</p>
+      </div>
+
+      <div class="bg-white rounded shadow overflow-hidden">
+        <img src="assets/images/living.jpg" class="h-48 w-full object-cover">
+        <p class="p-4 font-semibold">Club House</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer class="bg-gray-900 text-white py-8">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-6 text-sm">
+
+    <div>
+      <h3 class="font-bold mb-2">Mahindra Blossom</h3>
+      <p>Premium homes with positive energy living.</p>
+    </div>
+
+    <div>
+      <h3 class="font-bold mb-2">Contact</h3>
+      <p>📞 <a href="tel:+919901717339">+91 99017 17339</a></p>
+      <p>✉️ <a href="mailto:sales@mahindrablossom.com">sales@mahindrablossom.com</a></p>
+    </div>
+
+    <div>
+      <h3 class="font-bold mb-2">Quick Links</h3>
+      <a class="block" href="pricing.html">Pricing</a>
+      <a class="block" href="amenities.html">Amenities</a>
+    </div>
+
+  </div>
+</footer>
+
+<footer class="bg-gray-900 text-white py-6 text-center text-sm">
+  © 2026 Mahindra Lifespaces. All Rights Reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
